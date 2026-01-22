@@ -1,0 +1,187 @@
+.myplans{
+    padding: 20px 40px;
+    color: black;
+    text-align: center;
+}
+
+.myplans h3{
+    font-size: 32px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    text-align: center !important;
+    text-decoration: underline;
+    text-decoration-color: #E63973;
+}
+
+.myplans h4{
+    font-size: 25px;
+    opacity: 0.8;
+    margin: 30px 0;
+}
+
+.in-myplans{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.bigplan{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+.plan{
+    box-shadow: 0 6px 16px rgba(0,0,0,0.8);
+    padding: 25px 35px;
+    border-radius: 10px;
+    width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.plan:hover{
+    background: rgba(255,255,255,0.2);
+}
+
+.pops{
+    background: rgba(243, 243, 243, 0.2);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+    margin-top: -24px;
+    margin-bottom: 10px;
+}
+
+.pops p{
+    margin: 0;
+    padding: 20px 30px;
+    text-align: center;
+}
+.np h6{
+    font-size: 22px;
+    margin: 0;
+    text-align: left;
+}
+
+.np h5{
+    font-size: 26px;
+    margin: 5px 0 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.deline{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    margin: 6px 0;
+}
+
+.plan button{
+    background: linear-gradient(135deg, #FF8C1A, #E63973);
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.plan button:hover{
+    background: #E63973;
+}
+.plansTop{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.closePlansBtn{
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .myplans{
+    padding: 14px 12px;
+    margin-top: 0;
+  }
+
+  .myplans h3{
+    font-size: 22px;
+    margin: 14px 0 6px;
+    line-height: 1.2;
+  }
+
+  .myplans h4{
+    font-size: 18px;
+    margin: 18px 0 12px;
+  }
+
+  .in-myplans{
+    flex-direction: column;
+    align-items: stretch; /* ✅ full width */
+    gap: 12px;
+  }
+
+  .bigplan{
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .plan{
+    width: 100%;
+    padding: 18px 14px;
+    border-radius: 14px;
+    box-sizing: border-box;
+  }
+
+  /* Popular badge spacing fix */
+  .pops{
+    margin-top: -18px;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .pops p{
+    padding: 12px 12px;
+    font-size: 16px;
+  }
+
+  .np h6{
+    font-size: 16px;
+  }
+
+  .np h5{
+    font-size: 18px;
+    margin: 6px 0 10px;
+  }
+
+  .deline{
+    font-size: 14px;
+    line-height: 1.4;
+    gap: 8px;
+    margin: 8px 0;
+    text-align: left;
+    word-break: break-word; 
+  }
+
+  .plan button{
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 14px;
+  }
+}

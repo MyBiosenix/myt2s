@@ -1,0 +1,115 @@
+/* Modal box (adjust spacing and width consistency) */
+.modal-box {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 14px; /* consistent vertical spacing */
+}
+.modal-box1{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+}
+
+/* Heading */
+.modal-box h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2d2d2d;
+  background-color: #f5f5f5;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Inputs & selects (same styles) */
+.modal-box input,
+.modal-box select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  font-size: 15px;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.2s;
+  background-color: #fff;
+}
+
+.modal-box input:focus,
+.modal-box select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Modal actions */
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  min-width: 100px;
+}
+
+/* Cancel Button */
+.modal-actions button:first-child {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.modal-actions button:first-child:hover {
+  background-color: #e0e0e0;
+}
+
+/* Post Button */
+.modal-actions button:last-child {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.modal-actions button:last-child:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 450px) {
+  
+ 
+  .modal-box {
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .modal-box h2 {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .modal-box input,
+  .modal-box select {
+    font-size: 14px;
+    padding: 10px 12px;
+    color: black;
+  }
+
+  .modal-actions button {
+    font-size: 14px;
+    padding: 8px 16px;
+    min-width: 90px;
+  }
+}

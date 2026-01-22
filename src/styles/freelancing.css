@@ -1,0 +1,150 @@
+.myfree{
+    padding: 0px 30px;
+    color: black;
+}
+.myfree h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-color: #E63973;
+}
+.gofree{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+
+}
+.freeprop{
+    background: #fff;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    padding: 20px 35px;
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+    border:  1px solid #E63973;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.freeprop:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.freeprop h4{
+    font-size: 25px;
+    margin: 0;
+}
+.freeprop p{
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+.freeprop img{
+    width: 90px;
+    height: auto;
+}
+.vfp{
+    display: flex;
+    margin-top: 20px;
+    justify-self: center;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #FF8C1A, #E63973);
+    cursor: pointer;
+    border-width: 0;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.disclaim{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.disclaim h5{
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+.disclaim p{
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+@media (max-width: 450px) {
+  .myfree {
+    padding: 14px 12px;
+    margin-top: 0;
+    box-sizing: border-box;
+  }
+
+  .myfree h3 {
+    font-size: 22px;
+    margin: 14px 0 10px;
+    line-height: 1.2;
+  }
+
+  .gofree {
+    flex-direction: column;
+    align-items: stretch; /* ✅ full width */
+    gap: 12px;
+    margin-top: 14px;
+  }
+
+  .freeprop {
+    width: 100%;
+    padding: 16px 14px;   /* ✅ smaller padding */
+    gap: 10px;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+
+  .freeprop img {
+    width: 56px;
+  }
+
+  .freeprop h4 {
+    font-size: 18px;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  .freeprop p {
+    font-size: 14px;
+    line-height: 1.55;
+    text-align: center;
+  }
+
+  .vfp {
+    width: 100%;
+    max-width: 320px;
+    margin: 14px auto 0; /* ✅ center */
+    display: flex;
+    justify-content: center;
+    padding: 12px 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .disclaim {
+    margin-top: 16px;
+    gap: 8px;
+  }
+
+  .disclaim h5 {
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .disclaim p {
+    font-size: 13px;
+    line-height: 1.55;
+    margin: 0;
+    text-align: center;
+    opacity: 0.95;
+  }
+}

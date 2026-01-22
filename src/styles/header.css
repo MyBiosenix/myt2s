@@ -1,0 +1,119 @@
+.myheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  height: 60px;
+  top: 0;
+  z-index: 10000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.inhead {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.inhead p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.inhead p:hover {
+  color: #2563eb;
+  transform: scale(1.03);
+}
+
+.activeLink {
+  border-bottom: 1px solid #2563eb;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 6px;
+}
+
+.bar {
+  width: 26px;
+  height: 3px;
+  background: #111827;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.hamburger.active .bar1 {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.hamburger.active .bar2 {
+  opacity: 0;
+}
+.hamburger.active .bar3 {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+@media (max-width: 450px) {
+  .logo {
+    width: 140px;
+  }
+
+  .hamburger {
+    display: flex;
+    
+  }
+  .myheader{
+    padding: 10px;
+    position: sticky;
+  }
+
+  .inhead {
+    position: absolute;
+    top: 62px;
+    right: 12px;
+    width: 240px;
+    z-index: 99999;
+    background: #fff;
+    color: black;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+  }
+
+  .inhead.active {
+    display: flex;
+    outline: 2px solid red;
+  }
+
+  /* make items easy to tap */
+  .inhead p {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 12px;
+    border-radius: 10px;
+  }
+
+  .inhead p:hover {
+    background: #f3f4f6;
+    transform: none;
+  }
+}

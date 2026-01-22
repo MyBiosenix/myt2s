@@ -1,0 +1,51 @@
+.myabout1{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: black;
+}
+.imhg{
+    width:600px;
+    border-radius: 10px;
+}
+.contss{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.headingg{
+    display: flex;
+    align-items: center;
+}
+.hee{
+    width: 40px;
+    height: auto;
+    
+}
+.htst{
+    font-size: 30px;
+    margin: 0;
+}
+.ddd{
+    font-size: 20px;
+    margin: 0;
+}
+.inyuyu{
+    display: flex;
+    gap: 20px;
+}
+.yuyu{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.19);
+}
+.omm{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}

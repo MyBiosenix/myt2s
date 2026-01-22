@@ -1,0 +1,65 @@
+.myblank{
+  min-height: 260px;            /* ✅ flexible instead of fixed height */
+  background: #000;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  padding: 30px 20px;
+  text-align: center;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.myblank p{
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 700px;
+}
+
+/* CTA button */
+.myblank button{
+  background: linear-gradient(135deg, #FF8C1A, #E63973);
+  color: #000;
+  border: none;
+  padding: 12px 26px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.2s ease;
+}
+
+.myblank button:hover{
+  background: #E63973;
+}
+
+.myblank button:active{
+  transform: scale(0.98);
+}
+
+/* ✅ Mobile */
+@media (max-width: 450px){
+  .myblank{
+    min-height: auto;           /* allow natural height */
+    padding: 24px 14px;
+    gap: 14px;
+  }
+
+  .myblank p{
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .myblank button{
+    width: 100%;                /* full-width CTA */
+    max-width: 320px;
+    font-size: 16px;
+    padding: 12px;
+  }
+}

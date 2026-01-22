@@ -1,0 +1,91 @@
+.exta{
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: black;
+  box-sizing: border-box;
+  background: black;
+  color: white;
+}
+
+.exta p{
+  text-align: center;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 20px;
+}
+
+.never h4{
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+.ulls{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.ul1, .ul2{
+  margin: 0;
+  padding-left: 18px;
+}
+
+.ul1 li, .ul2 li{
+  margin: 8px 0;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.exta button{
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #FF8C1A, #E63973);
+  color: black;
+  border-width: 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 350px;
+  max-width: 100%;
+  align-self: center;
+  cursor: pointer;
+}
+
+/* ✅ MOBILE */
+@media (max-width: 450px){
+  .exta{
+    padding: 14px 12px;
+    gap: 14px;
+  }
+
+  .exta p{
+    font-size: 14px;
+    text-align: left; /* easier to read on mobile */
+  }
+
+  .never h4{
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .ulls{
+    flex-direction: column;   /* ✅ stack lists */
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .ul1, .ul2{
+    padding-left: 18px;
+    font-size: 14px;
+  }
+
+  .exta button{
+    width: 100%;              /* ✅ full width button */
+    max-width: 320px;
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 6px;
+  }
+}

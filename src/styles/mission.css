@@ -1,0 +1,56 @@
+/* Base improvements (optional but recommended) */
+.missns {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.inm {
+  background: #fff;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 300px;
+  box-shadow:  0 10px 25px rgba(0,0,0,0.3);
+  padding: 20px;
+}
+
+.inm p {
+  margin: 0;
+  line-height: 1.5;
+  color: #333;
+}
+
+.omm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* ✅ Mobile responsive */
+@media (max-width: 450px) {
+  .missns {
+    flex-direction: column;     /* stack cards */
+    align-items: center;
+    gap: 24px;
+    padding: 14px 12px;
+  }
+
+  .inm {
+    width: 90%;                /* full width */
+    max-width: 340px;
+    padding: 16px 14px;
+    margin-top: 10px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+  }
+
+  .omm {
+    font-size: 16px;
+  }
+
+  .inm p {
+    font-size: 14px;
+  }
+}

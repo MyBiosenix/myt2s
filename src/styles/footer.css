@@ -1,0 +1,172 @@
+
+.footer{
+  background: #f6f7f9;
+  border-top: 1px solid #e5e7eb;
+  padding: 44px 18px 14px;
+  color: #111827;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+.myfooter{
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 1fr 0.9fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.myfooter h3{
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: 0.2px;
+}
+
+.myiaia p{
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.alerts ul{
+  margin: 0;
+  padding-left: 18px;
+}
+
+.alerts li{
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #334155;
+}
+
+.alerts a{
+  color: black;
+  text-decoration: none;
+}
+
+.alerts a:hover{
+  text-decoration: underline;
+}
+
+.support .icntxt{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.icn{
+  font-size: 16px;
+  color: black;
+  margin-top: 2px;
+  flex: 0 0 auto;
+}
+
+.support a{
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.support a:hover{
+  text-decoration: underline;
+}
+
+/* COMPLAINT + DOCUMENT */
+.cmps{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cmps button{
+  background: linear-gradient(135deg, #FF8C1A, #E63973);
+  color: #fff;
+  border: none;
+  padding: 11px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.08s ease, background 0.2s ease;
+}
+
+.cmps button:hover{
+  background: #FF8C1A;
+}
+
+.cmps button:active{
+  transform: scale(0.99);
+}
+
+.cmps p{
+  margin: 0;
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.docLink{
+  font-size: 14px;
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.docLink:hover{
+  color: #FF8C1A;
+  text-decoration: underline;
+}
+
+/* BOTTOM BAR */
+.footBottom{
+  max-width: 1200px;
+  margin: 22px auto 0;
+  padding-top: 14px;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.footBottom p{
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+@media (max-width: 900px){
+  .myfooter{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ------------------------- */
+/* MOBILE */
+@media (max-width: 450px){
+  .footer{
+    padding: 34px 14px 12px;
+  }
+
+  .myfooter{
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .myfooter h3{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .alerts ul{
+    padding-left: 16px;
+  }
+
+  .cmps button{
+    width: 100%;
+  }
+}

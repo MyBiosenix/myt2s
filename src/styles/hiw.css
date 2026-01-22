@@ -1,0 +1,479 @@
+.hiw {
+  padding: 30px;
+  color: #111;
+}
+
+.hiwTitle {
+  text-align: center;
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #E63973;
+  text-align: center;
+}
+.ttle2{
+  text-align: center;
+  font-size: 25px;
+}
+.con{
+  text-align: center;
+  font-size: 20px;
+}
+
+/* ===== ROADMAP WRAPPER ===== */
+.roadmap {
+  position: relative;
+  margin-top: 28px;
+  padding: 18px 6px 6px;
+}
+
+/* the “road” line behind cards */
+.roadTrack {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 52px;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #E63973, #ffb703, #E63973);
+  opacity: 0.25;
+  filter: blur(0.2px);
+}
+
+/* row of milestones */
+.roadRow {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  overflow-x: auto;
+  padding: 10px 6px 14px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* scrollbar (optional) */
+.roadRow::-webkit-scrollbar {
+  height: 7px;
+}
+.roadRow::-webkit-scrollbar-thumb {
+  background: #d7d7d7;
+  border-radius: 999px;
+}
+
+/* ===== MILESTONE CARD ===== */
+.roadCard {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 240px;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 14px 14px 16px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(8px);
+  text-align: left;
+  cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+.roadCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.12);
+}
+
+.roadCard.active {
+  border-color: rgba(230,57,115,0.45);
+  box-shadow: 0 18px 34px rgba(230,57,115,0.12), 0 12px 24px rgba(0,0,0,0.08);
+}
+
+/* top row: step label + dot */
+.roadTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.roadStep {
+  font-size: 12px;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+  color: #666;
+  font-weight: 700;
+}
+
+.roadDot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid rgba(230,57,115,0.9);
+  box-shadow: 0 0 0 4px rgba(230,57,115,0.12);
+}
+
+/* icon */
+.roadIcon {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, rgba(230,57,115,0.18), rgba(255,183,3,0.22));
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.roadTitle {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #111;
+}
+
+.roadText {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Details panel (keep yours if you want) */
+.hiwDetails{
+  margin: 22px auto 0;
+  max-width: 980px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+/* subtle gradient top strip like premium UI */
+.hiwDetails::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(90deg, #E63973, #ffb703, #E63973);
+  opacity: 0.85;
+}
+
+/* heading */
+.hiwDetails h3{
+  margin: 6px 0 10px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #111;
+  letter-spacing: 0.2px;
+}
+
+/* description text */
+.hiwDesc{
+  margin: 0 0 14px;
+  font-size: 15px;
+  line-height: 1.75;
+  color: #444;
+  max-width: 90%;
+}
+
+/* list resets (remove default ugly spacing) */
+.hiwDetails ul{
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* 2-column on desktop */
+  gap: 10px 14px;
+}
+
+/* list items as neat chips */
+.hiwDetails li{
+  margin: 0;
+  padding: 12px 12px 12px 42px;
+  background: rgba(0,0,0,0.03);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 12px;
+  font-size: 14px;
+  color: #333;
+  position: relative;
+  line-height: 1.4;
+}
+
+/* custom check marker */
+.hiwDetails li::before{
+  content: "✓";
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  font-weight: 900;
+  color: #E63973;
+  background: linear-gradient(135deg, rgba(230,57,115,0.16), rgba(255,183,3,0.18));
+  border: 1px solid rgba(230,57,115,0.20);
+}
+
+/* button upgrade */
+.hiwBtn{
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #111, #2b2b2b);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+  transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+}
+
+.hiwBtn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.16);
+  opacity: 0.96;
+}
+
+
+/* ===== MOBILE ===== */
+@media (max-width: 450px) {
+  .hiw {
+    padding: 18px 14px;
+  }
+
+  .hiwTitle {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .roadTrack {
+    top: 56px;
+    height: 9px;
+  }
+
+  .roadCard {
+    width: 220px;
+    padding: 12px;
+  }
+
+  .roadIcon {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+    border-radius: 12px;
+  }
+
+  .roadTitle {
+    font-size: 16px;
+  }
+
+  .roadText {
+    font-size: 13px;
+  }
+
+  .hiwDetails{
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .hiwDetails h3{
+    font-size: 18px;
+  }
+
+  .hiwDesc{
+    font-size: 13px;
+    line-height: 1.7;
+    max-width: 100%;
+  }
+
+  .hiwDetails ul{
+    grid-template-columns: 1fr; /* single column on mobile */
+  }
+
+  .hiwDetails li{
+    font-size: 13px;
+    padding: 11px 11px 11px 40px;
+  }
+
+  .hiwBtn{
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+}
+/* ================= ROADMAP STYLES (NEW) ================= */
+.roadmap {
+  position: relative;
+  margin-top: 28px;
+  padding: 18px 6px 6px;
+}
+
+.roadTrack {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 52px;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #E63973, #ffb703, #E63973);
+  opacity: 0.25;
+}
+
+.roadRow {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  overflow-x: auto;
+  padding: 10px 6px 14px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.roadRow::-webkit-scrollbar {
+  height: 7px;
+}
+.roadRow::-webkit-scrollbar-thumb {
+  background: #d7d7d7;
+  border-radius: 999px;
+}
+
+.roadCard {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 240px;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 14px 14px 16px;
+  background: rgba(255,255,255,0.92);
+  text-align: left;
+  cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  position: relative;
+  outline: none;
+}
+
+.roadCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.12);
+}
+
+.roadCard.active {
+  border-color: rgba(230,57,115,0.45);
+  box-shadow: 0 18px 34px rgba(230,57,115,0.12), 0 12px 24px rgba(0,0,0,0.08);
+}
+
+.roadTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.roadStep {
+  font-size: 12px;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+  color: #666;
+  font-weight: 700;
+}
+
+.roadDot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid rgba(230,57,115,0.9);
+  box-shadow: 0 0 0 4px rgba(230,57,115,0.12);
+}
+
+.roadIcon {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, rgba(230,57,115,0.18), rgba(255,183,3,0.22));
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.roadTitle {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #111;
+}
+
+.roadText {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.roadHint {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: #888;
+}
+
+/* MOBILE */
+@media (max-width: 450px) {
+  .roadTrack {
+    top: 56px;
+    height: 9px;
+  }
+  .roadCard {
+    width: 220px;
+    padding: 12px;
+  }
+  .roadIcon {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+    border-radius: 12px;
+  }
+  .roadTitle {
+    font-size: 16px;
+  }
+  .roadText {
+    font-size: 13px;
+  }
+}
+.bpatch{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px 0;
+}
+.bpatch p{
+  text-align: center;
+  font-size: 20px;
+}
+.bpatch button{
+  background: linear-gradient(135deg, #FF8C1A, #E63973);
+  color: #000;
+  border: none;
+  padding: 12px 26px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.2s ease;
+}

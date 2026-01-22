@@ -1,0 +1,243 @@
+.myrs{
+    padding: 20px 40px;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.myrs1{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 560px;
+    
+}
+.inrs1{
+    display: flex;
+    flex-direction: column;
+    max-height: 570px;
+    gap: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #1a0033 #33004d;
+    background: rgba(205, 202, 202, 0.4);
+    border-radius: 8px;
+    padding: 20px 10px;
+}
+.rateicon{
+    color: Basic;
+}
+.rprop{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid black;
+}
+.inprop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.usericon{
+    width: 70px;
+    height: 70px;
+    border-radius: 80px;
+}
+.myrs1 h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-left: 4px solid #9a4dff;
+  padding-left: 10px;
+}
+.myrs2{
+    width: 45%;
+    margin-top: 30px;
+    background: rgba(205, 202, 202, 0.4);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.myimgs12{
+    display: flex;
+    gap: 10px;
+}
+.in-myimgs12{
+    display: block;
+}
+.byy{
+    height: 300px;
+}
+.hyy{
+    width: 300px;
+    height: 150px;
+}
+.myimgs12{
+    display: flex;
+    gap: 5px;
+}
+.in-myimgs12{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.byy{
+    width: 50%;
+    border-radius: 5%;
+}
+.hyy{
+    width: 100%;
+    border-radius: 5%;
+}
+.names{
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+.names h3{
+    font-size: 25px;
+    margin: 0;
+}
+.starts{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom:10px;
+    
+}
+.rateicon1{
+    color: goldenrod;
+    margin-top: 4px;
+}
+.empty{
+    color: rgb(180, 180, 180);
+}
+.mynavs{
+    display: flex;
+    gap: 5px;
+    
+}
+.in-mynavs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 100px;
+    border-radius: 50px;
+    cursor: pointer;
+    gap: 5px;
+    margin-right: 10px;
+
+}
+.in-mynavs p{
+    font-size: 17px;
+    color: black;
+}
+.gold{
+    color: goldenrod;
+}
+.add{
+    width: 70%;
+    margin: 0;
+    text-transform: uppercase;
+}
+.reviewpicon{
+    color: #009CFD;
+}
+.reviewpicon1{
+    color: #009CFD;
+    transform: rotate(90deg);
+}
+.reviewpicon3{
+    width: 20px;
+}
+.starts label{
+    color: blue;
+    cursor: pointer;
+    
+}
+.starts{
+    display: flex;
+    align-items: center;
+}
+.hours {
+  margin-top: 10px;
+}
+
+.hours summary {
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.hours-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.hours-list li {
+  margin: 2px 0;
+}
+
+@media (max-width:450px){
+    .myrs{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 10px 15px;
+    }
+    .myrs1{
+        width: 98%;
+    }
+    .inrs1{
+        padding: 10px;  
+    }
+    .usericon{
+        width: 60px;
+        height: 60px;
+    }
+    .rprop p{
+        font-size: 15px;
+    }
+    .myrs2{
+        width: 95%;
+    }
+    .byy{
+        height: 300px;
+    }
+    .hyy{
+        height: 150px;
+    }
+    .names h3{
+        font-size: 20px;
+    }
+    .names{
+        padding: 0;
+    }
+    .mynavs{
+        padding: 0;
+        gap: 0px;
+    }
+    .in-mynavs{
+        padding: 5px 10px;
+        gap: 5px;
+    }
+    .in-mynavs p{
+        font-size: 12px;
+    }
+    .reviewpicon,.reviewpicon1,.reviewpicon3{
+        width: 12px;
+    }
+    .add{
+        padding: 0;
+        font-size: 15px;
+        width: 100%;
+    }
+    
+}

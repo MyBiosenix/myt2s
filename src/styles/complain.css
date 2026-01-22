@@ -1,0 +1,91 @@
+.complain{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    gap: 40px;
+}
+.mycomplain{
+    padding: 20px 0px;
+}
+.mycomplain p{
+    font-size: 20px;
+}
+.compform{
+    padding: 20px 50px;
+    background: rgba(205, 202, 202, 0.4);
+    border-radius: 5px;
+}
+.inform{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.inform input{
+    padding: 15px 10px;
+    height: 40px;
+    border: 1px solid white;
+    background: white;
+    border-color: white;
+    border-radius: 5px;
+    font-size: 18px;
+
+}
+.inform textarea{
+    grid-column: span 2;
+    background: transparent;
+    height: 80px;
+    border-color: white;
+    background: white;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+.inform input::placeholder,textarea::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(160, 160, 160);
+}
+.compform button{
+    margin-top: 20px;
+    background: linear-gradient(135deg, #FF8C1A, #E63973);
+    border-width: 0;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+
+@media (max-width:450px){
+    .complain{
+        flex-direction: column;
+        padding: 10px 15px;
+        align-items: center;
+        gap: 0px;
+    }
+    .mycomplain{
+        width: 95%;
+    }
+    .mycomplain p{
+        font-size: 15px;
+    }
+    .compform{
+        width: 95%;
+        align-items: center;
+        padding: 10px 15px;
+    }
+    .compform button{
+        width: 100%;
+        font-size: 15px;
+    }
+    .inform {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .inform input{
+        font-size: 15px;
+    }
+    .inform textarea{
+        grid-column: span 1;
+        font-size: 15px;
+    }
+}

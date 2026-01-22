@@ -1,0 +1,225 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    color: rgb(0, 0, 0);
+}
+.about h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #E63973;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 0;
+}
+.about h4{
+    font-size: 25px;
+}
+.about p{
+    margin: 0;
+    font-size: 20px;
+    word-spacing: 2px;
+}
+.in-about{
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #E63973;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.19);
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.aboutit p{
+  text-align: center;
+}
+.hl{
+  margin-top: 20px !important;
+  font-weight: bold;
+}
+.ul{
+    margin-bottom: -20px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.vass{
+  border-width: 0;
+  display: flex;
+  justify-self: center;
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #FF8C1A, #E63973);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.grids{
+    display: flex;
+    gap: 10px;
+    padding: 20px 0px;
+}
+.ingrid{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.19);
+    background: #fff;
+    border: 1px solid #E63973;
+    align-items: center;
+    padding: 40px 25px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.ingrid.aos-animate{
+  transform: none !important;
+}
+
+.icon{
+    font-size: 50px;
+    color: #E63973;
+}
+.ingrid h4{
+    margin: 0;
+    font-size: 20px;
+    text-transform: none;
+    text-align: center;
+}
+.ingrid p{
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+.vas{
+    padding: 10px 20px;
+    font-size: 20px;
+    background: linear-gradient(135deg, #FF8C1A, #E63973);
+    cursor: pointer;
+    border-width: 0;
+    border-radius: 5px;
+}
+
+@media (max-width: 450px) {
+  .about {
+    padding: 14px 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .about h3 {
+    font-size: 22px;
+    margin: 16px 0 10px;
+    line-height: 1.2;
+  }
+
+  .about p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .in-about {
+    width: 100%;
+    padding: 14px 12px;
+    border-radius: 12px;
+    margin: 12px 0 18px;
+    box-sizing: border-box;
+  }
+
+  .aboutit p {
+    text-align: left; /* ✅ remove forced center on mobile */
+  }
+
+  .hl {
+    margin-top: 14px !important;
+    font-size: 16px;
+  }
+
+  /* ✅ Highlights list becomes vertical */
+  .ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 12px 0 0;
+    width: 100%;
+  }
+
+  .li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .li svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  /* ✅ Buttons full-width and centered nicely */
+  .vass,
+  .vas {
+    width: 100%;
+    max-width: 320px;
+    margin: 14px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    font-size: 16px;
+    padding: 12px 14px;
+    border-radius: 10px;
+  }
+
+  .ops {
+    margin-top: 20px;
+  }
+
+  /* ✅ Services cards stack properly */
+  .grids {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+
+  .ingrid {
+    width: 100%;
+    padding: 18px 14px;
+    border-radius: 12px;
+    gap: 10px;
+    box-sizing: border-box;
+    align-items: flex-start; /* ✅ better for mobile reading */
+  }
+
+  .icon {
+    font-size: 34px;
+  }
+
+  .ingrid h3 {
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.25;
+  }
+
+  .ingrid p {
+    font-size: 14px;
+    line-height: 1.55;
+    text-align: left;
+  }
+}

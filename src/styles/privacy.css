@@ -1,0 +1,142 @@
+/* privacy.css */
+
+.ppWrap{
+  background: #f6f8fb;
+  padding: 40px 16px;
+  color: #111827;
+  box-sizing: border-box;
+}
+
+.ppContainer{
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  padding: 30px 28px;
+  box-sizing: border-box;
+}
+
+.ppTitle{
+  margin: 0 0 18px;
+  font-size: 30px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.ppText{
+  margin: 0 0 14px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #374151;
+}
+
+.ppSection{
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #eef2f7;
+}
+
+.ppHeading{
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #111827;
+}
+
+.ppSubHeading{
+  margin: 12px 0 8px;
+  font-size: 16px;
+  color: #111827;
+  font-weight: 700;
+}
+
+.ppList{
+  margin: 0 0 12px;
+  padding-left: 18px;
+  color: #374151;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.ppList li{
+  margin: 6px 0;
+}
+
+.ppCallout{
+  margin: 12px 0 0;
+  padding: 12px 14px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  color: #1e3a8a;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.ppContact{
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.ppMail{
+  display: inline-block;
+  margin-top: 6px;
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.ppMail:hover{
+  text-decoration: underline;
+}
+
+.ppFooterNote{
+  margin: 22px 0 0;
+  text-align: center;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* ✅ Mobile */
+@media (max-width: 450px){
+  .ppWrap{
+    padding: 18px 12px;
+  }
+
+  .ppContainer{
+    padding: 18px 14px;
+    border-radius: 14px;
+  }
+
+  .ppTitle{
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .ppText{
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .ppHeading{
+    font-size: 17px;
+  }
+
+  .ppSubHeading{
+    font-size: 14px;
+  }
+
+  .ppList{
+    font-size: 14px;
+  }
+
+  .ppCallout{
+    font-size: 14px;
+  }
+}
