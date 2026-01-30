@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/privacy.css";
+import ScrollTop from "../components/ScrollTop";
 
 function PrivacyPolicy() {
   return (
@@ -178,6 +179,7 @@ function PrivacyPolicy() {
           © {new Date().getFullYear()} Tech2Shine Labs. All rights reserved.
         </p>
       </div>
+      <ScrollTop/>
     </div>
   );
 }

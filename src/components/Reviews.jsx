@@ -2,10 +2,10 @@ import React from 'react'
 import '../Styles/review.css'
 import ReviewProp from '../Props/ReviewProp'
 import google from '../assets/google.png'
-import re1 from '../assets/62.jpeg'
-import re2 from '../assets/10.jpeg'
-import re3 from '../assets/42.jpeg'
-import re4 from '../assets/23.jpeg'
+import re1 from '../assets/31.jpg'
+import re2 from '../assets/32.jpg'
+import re3 from '../assets/33.jpg'
+import re4 from '../assets/34.jpg'
 import { FiStar} from 'react-icons/fi'
 
 function Reviews() {
@@ -17,14 +17,14 @@ function Reviews() {
                 google={google}
                 content="Perfect if you want to work from home. The support is helpful, and I’m honestly happy that I trusted this and earned money."
                 image={re1}
-                name="Nilesh Kumar"
+                name="Vaishali Jadhav"
             />
 
             <ReviewProp
                 google={google}
                 content="The support team is quick to respond and the projects are legit. Great experience so far."
                 image={re2}
-                name="Harshita Dongre"
+                name="Harsh Dongre"
             />
 
             <ReviewProp
@@ -37,7 +37,7 @@ function Reviews() {
                 google={google}
                 content="Reliable platform for remote work. Estimated Earningss are always on time, and support is responsive."
                 image={re4}
-                name="Harsh Kushwaha"
+                name="Kashish Kushwaha"
             />
         </div>
     </div>

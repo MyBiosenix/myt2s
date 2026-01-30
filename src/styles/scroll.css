@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: rgba(205, 202, 202, 0.4);
+  background: linear-gradient(135deg, #FF8C1A, #E63973);
   color: white;
   width: 45px;
   height: 45px;
@@ -18,6 +18,6 @@
 }
 
 .scroll-to-top:hover {
-  background: #007bc3;
+  background: #E63973;
   transform: translateY(-3px);
 }

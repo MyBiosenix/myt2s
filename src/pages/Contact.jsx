@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import '../styles/Ap.css'
 import ContactComp from '../components/ContactComp'
 import Patch6 from '../components/Patch6'
+import ScrollTop from '../components/ScrollTop'
 
 function Contact() {
   return (
@@ -12,6 +13,7 @@ function Contact() {
       <Patch6/>
       <ContactComp/>
       <Footer/>
+      <ScrollTop/>
     </div>
   )
 }

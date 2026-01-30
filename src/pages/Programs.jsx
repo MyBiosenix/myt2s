@@ -5,6 +5,7 @@ import Extra from "../components/Extra";
 import Plans from "../components/Plans";
 import Footer from "../components/Footer";
 import Patch2 from "../components/Patch2";
+import ScrollTop from "../components/ScrollTop";
 
 function Programs() {
   const [activePlan, setActivePlan] = useState(null);
@@ -39,6 +40,7 @@ function Programs() {
 
       <Extra />
       <Footer />
+      <ScrollTop/>
     </div>
   );
 }

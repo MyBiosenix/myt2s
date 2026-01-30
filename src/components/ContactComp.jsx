@@ -19,14 +19,14 @@ function ContactComp() {
         }
 
         const templateParams = {
-            from_name : name,
-            from_email : email,
+            name : name,
+            email : email,
             subject: subject,
             message: message
         }
         emailjs.send(
             "service_wpphot5",
-            "template_vw82zj7",
+            "template_neyeiba",
             templateParams,
             "tYY-vfdd_MgvObNww"
         )

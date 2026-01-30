@@ -68,7 +68,7 @@ function ComplainComp() {
             <input type='text' placeholder='Enter Registration Id' value={rid} onChange={(e)=>setRid(e.target.value)}/>
             <textarea placeholder='Write Your Complain Here' value={complain} onChange={(e)=>setComplain(e.target.value)}/>
         </div>
-        <button onClick={sendComplain}>Submit Complain</button>
+        <button onClick={sendComplain}>Submit Complaint</button>
         {status && <p className='status' style={{textAlign:'center'}}>{status}</p>}
       </div>
     </div>

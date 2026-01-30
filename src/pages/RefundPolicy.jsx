@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/privacy.css";
+import ScrollTop from "../components/ScrollTop";
 
 function RefundPolicy() {
   return (
@@ -134,6 +135,7 @@ function RefundPolicy() {
           © {new Date().getFullYear()} Tech2Shine Labs. All rights reserved.
         </p>
       </div>
+      <ScrollTop/>
     </div>
   );
 }

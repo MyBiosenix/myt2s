@@ -7,6 +7,7 @@ import PricingComp from '../components/PricingComp'
 import Blank from '../components/Blank'
 import '../styles/Ap.css'
 import Patch3 from '../components/Patch3'
+import ScrollTop from '../components/ScrollTop'
 
 function Pricing() {
   return (
@@ -16,6 +17,7 @@ function Pricing() {
       <PricingComp/>
       <Blank/>
       <Footer/>
+      <ScrollTop/>
     </div>
   )
 }

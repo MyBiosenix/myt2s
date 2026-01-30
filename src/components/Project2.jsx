@@ -8,15 +8,18 @@ function Project2({ onKnowMore }) {
       <div className="inpro">
         <h3 data-aos="fade-right">Programs You Can Participate In</h3>
         <p>
-          Tech2Shine Labs provides access to structured, non-voice digital projects suitable for individuals seeking flexible remote participation. Our platform focuses on clarity, accuracy standards, and professional workflows. Each program defines the scope of work, quality benchmarks, submission cycles, and review processesAvailable program categories include:
+          Tech2Shine Labs provides access to structured, non-voice digital projects suitable for individuals seeking flexible remote participation. Our platform focuses on clarity, accuracy standards, and professional workflows. Each program defines the scope of work, quality benchmarks, submission cycles, and review processesAvailable program categories include:</p>
           <br/>
+        <div className="poos">
+          <p>✔ Data Conversion Program</p>
+     
 
-✔ Data Conversion Program
+          <p>✔ Data Segregation Program</p>
+      
 
-✔ Data Segregation Program
-
-✔ Captcha Code Entry Program
-        </p>
+          <p>✔ Captcha Code Entry Program</p>
+        </div>
+       
         <p>
           All assignments delivered through Tech2Shine Labs are contractual in nature and do not constitute employment. Participants are engaged as independent contractors and are expected to follow defined program guidelines.
         </p>

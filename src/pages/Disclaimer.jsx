@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/privacy.css";
+import ScrollTop from "../components/ScrollTop";
 
 function Disclaimer() {
   return (
@@ -163,6 +164,7 @@ function Disclaimer() {
           © {new Date().getFullYear()} Tech2Shine Labs. All rights reserved.
         </p>
       </div>
+      <ScrollTop/>
     </div>
   );
 }

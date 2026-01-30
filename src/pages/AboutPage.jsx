@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import Missions from '../components/Missions'
 import '../styles/Ap.css'
 import Patch1 from '../components/Patch1'
+import ScrollTop from '../components/ScrollTop'
 
 function AboutPage() {
   return (
@@ -15,6 +16,7 @@ function AboutPage() {
       <APComp/>
       <Missions/>
       <Footer/>
+      <ScrollTop/>
     </div>
   )
 }

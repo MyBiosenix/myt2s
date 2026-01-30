@@ -10,6 +10,7 @@ import '../styles/home.css'
 import MyAbout from '../ncomps/MyAbout'
 import Footer from '../components/Footer'
 import FAQ from '../components/FAQ'
+import ScrollTop from '../components/ScrollTop'
 
 function Home() {
   return (
@@ -27,6 +28,7 @@ function Home() {
       <Reviews/>
       <FAQ/>
       <Footer/>
+      <ScrollTop/>
     </div>
   )
 }
